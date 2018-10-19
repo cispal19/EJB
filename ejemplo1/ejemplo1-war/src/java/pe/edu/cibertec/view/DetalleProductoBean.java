@@ -7,6 +7,7 @@ package pe.edu.cibertec.view;
 
 import java.io.Serializable;
 import javax.ejb.EJB;
+import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 import javax.faces.context.FacesContext;
 import javax.inject.Named;
@@ -17,7 +18,7 @@ import pe.edu.cibertec.servicio.ProductoServicio;
  *
  * @author JAdv-MJ
  */
-@Named
+@ManagedBean
 @RequestScoped
 public class DetalleProductoBean implements Serializable {
 

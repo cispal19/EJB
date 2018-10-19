@@ -9,8 +9,11 @@
     <h:body>
         <ui:repeat value="#{productoBean.listaProducto}" var="pro">
             <div>
-                <h2>#{pro.nombre} - #{pro.id}</h2>
+                <h2>#{pro.nombre} - <h:outputLink value="detalle.xhtml?id=#{pro.id}">#{pro.id}</h:outputLink>
+                </h2>
                 <p>#{pro.descripcion}</p>
+               
+                   
             </div>
         
         </ui:repeat>
